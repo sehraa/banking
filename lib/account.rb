@@ -1,8 +1,10 @@
 class Account
- attr_reader :balance  # remember what method this creates?
 
- def initialize
-   @balance = 0.00   # looks crazy, but just do it please
+ def initialize (starting_balance = 0.0)
+   @balance = starting_balance   # looks crazy, but just do it please
  end
 
+  def balance
+    @balance
+  end
 end
